@@ -1,0 +1,46 @@
+[
+  {
+    "question": "bananas are better than apples",
+    "answer": false
+  },
+  {
+    "question": "The answer to this question is true",
+    "answer": false
+  },
+  {
+    "question": "A human body has over 1 cell ",
+    "answer": true
+  },
+  {
+    "question": "You will get this question wrong",
+    "answer": false
+  },
+  {
+    "question": "Linus Wong is short",
+    "answer": true
+  },
+  {
+    "question": "Linus Wong is tall",
+    "answer": false
+  },
+  {
+    "question": "Linus Wong is bad at video games",
+    "answer": true
+  },
+  {
+    "question": "Linus Wong",
+    "answer": false
+  },
+  {
+    "question": "Spongebob is a square",
+    "answer": false
+  },
+  {
+    "question": "California has a bigger population than Canada",
+    "answer": true
+  },
+  {
+    "question": "Alan will fail his math test",
+    "answer": true
+  }
+]
