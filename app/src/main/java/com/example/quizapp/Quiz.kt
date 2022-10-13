@@ -27,6 +27,7 @@ class Quiz (var questions: List<Question>){
         }
     }
     //give the final score, reset the quiz?, shuffle questions?
+    //hi
     fun reset(){
         score = 0
         questionNumber = 0
