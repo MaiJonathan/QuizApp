@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Qnᴉz ∀dd</string>
+    <string name="main_true">┴ɹnǝ</string>
+    <string name="main_false">Ⅎɐlsǝ</string>
+    <string name="main_score">Sɔoɹǝ:</string>
+    <string name="main_question">Qnǝsʇᴉou</string>
+    <string name="main_finalScore">┴ǝxʇ Λᴉǝʍ</string>
+    <string name="restart">ɹǝsʇɐɹʇ</string>
+    <string name="shuffle">Sɥnɟɟlǝ</string>
+    <string name="main_quizCompleted">Qnᴉz Ɔoɯdlǝʇǝp</string>
+    <string name="main_finaScoreText">Ⅎᴉuɐl Sɔoɹǝ:</string>
+</resources>

@@ -2,7 +2,11 @@
     <string name="app_name">Quiz App</string>
     <string name="main_true">True</string>
     <string name="main_false">False</string>
-    <string name='main_score'>Score: 0</string>
+    <string name='main_score'>Score:</string>
     <string name="main_question">Question</string>
-    <string name="main_finalScore">TextView</string>
+    <string name="main_finalScore">Text View</string>
+    <string name="restart">Restart</string>
+    <string name="shuffle">Shuffle</string>
+    <string name="main_quizCompleted">Quiz Completed</string>
+    <string name="main_finaScoreText">Final Score:</string>
 </resources>

@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var finalScore: TextView
     private lateinit var groupFinished: Group
     private lateinit var groupUnfinished: Group
+    private lateinit var scoreText: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         wireWidgets()
         loadQuestions()
         //thing
-        val scoreText = getString(R.string.main_score)
+        scoreText = getString(R.string.main_score)
         //get the first question, set up the textviews
         displayQuestion()
         groupUnfinished.isVisible = true
@@ -78,7 +79,11 @@ class MainActivity : AppCompatActivity() {
         groupUnfinished.isVisible = false
         groupFinished.isVisible = true
         finalScore.setTextSize(50F)
-        finalScore.text = "Quiz Completed\nFinal Score:" + (quiz.score) + "/" + (quiz.questionNumber+1)
+        val quack = getString(R.string.main_quizCompleted)
+        val flop = getString(R.string.main_finaScoreText)
+        finalScore.text = "${quack}" +
+                "\n" +
+                "${flop} ${quiz.score} / ${quiz.questionNumber+1}"
     }
 
     private fun quizUncompleted()
@@ -101,7 +106,7 @@ class MainActivity : AppCompatActivity() {
     }
     private fun displayQuestion(){
         displayedQuestion.text = quiz.currentQuestion.question
-        displayedScore.text = "Score:" + quiz.score
+        displayedScore.text = "${scoreText}" + quiz.score
     }
 
     private fun loadQuestions() {
