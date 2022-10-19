@@ -1,5 +1,6 @@
 package com.example.quizapp
 
+import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -9,12 +10,8 @@ import androidx.constraintlayout.widget.Group
 import androidx.core.view.isVisible
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
-
-
-
 
     companion object {
         // all your static constants go here
@@ -75,15 +72,13 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    @SuppressLint("StringFormatInvalid")
     private fun quizCompleted() {
         groupUnfinished.isVisible = false
         groupFinished.isVisible = true
         finalScore.setTextSize(50F)
-        val quack = getString(R.string.main_quizCompleted)
-        val flop = getString(R.string.main_finaScoreText)
-        finalScore.text = "${quack}" +
-                "\n" +
-                "${flop} ${quiz.score} / ${quiz.questionNumber+1}"
+        val quack = getString(R.string.main_quizCompleted,quiz.score)
+        finalScore.text = quack
     }
 
     private fun quizUncompleted()
@@ -104,9 +99,10 @@ class MainActivity : AppCompatActivity() {
         restartButton = findViewById(R.id.button_main_restart)
         shuffleButton = findViewById(R.id.button_main_shuffle)
     }
+    @SuppressLint("StringFormatInvalid")
     private fun displayQuestion(){
         displayedQuestion.text = quiz.currentQuestion.question
-        displayedScore.text = "${scoreText}" + quiz.score
+        displayedScore.text = getString(R.string.main_score,quiz.score)
     }
 
     private fun loadQuestions() {
